@@ -51,10 +51,15 @@ function getPopularCourses(courses: Course[], minStudents: number): Course[] {
   );
 }
 
-// Problem 6
-
-
-// Problem 7
-
 
 // Problem 8
+async function validateAgeAsync(age: number): Promise<string> {
+  if (age < 18) {
+    throw new Error("Access Denied: Must be 18 or older");
+  }
+  return new Promise<string>((resolve: (value: string) => void): void => {
+    setTimeout((): void => {
+      resolve("Access Granted");
+    }, 1000);
+  });
+}
