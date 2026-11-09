@@ -51,6 +51,10 @@ function getPopularCourses(courses: Course[], minStudents: number): Course[] {
   );
 }
 
+// Problem 6
+function pluckValues<T, K extends keyof T>(items: T[], key: K): T[K][] {
+  return items.map((item: T): T[K] => item[key]);
+}
 
 // Problem 7
 class Employee {
