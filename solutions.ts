@@ -29,6 +29,12 @@ function formatCoordinate(
 }
 
 // Problem 4
-
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+  const combined: T[] = [];
+  for (const array of arrays) {
+    combined.push(...array);
+  }
+  return combined;
+}
 
 // Problem 5
