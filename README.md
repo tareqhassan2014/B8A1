@@ -1,10 +1,11 @@
+
 # B8A1 — Problem Solving with TypeScript & OOP
 
 ## Overview
 
-<!-- Briefly describe the assignment here -->
+This assignment practices core TypeScript concepts from Modules 1–3: optional parameters, union types and type narrowing, readonly tuples, generics with rest parameters and `keyof`, interfaces, OOP with access modifiers, and Promises. All eight problem solutions are in [`solutions.ts`](./solutions.ts).
 
 ## Blogs
 
-- [Blog 1](./blog-name-1.md)
-- [Blog 2](./blog-name-2.md)
+- [Type Narrowing in TypeScript](./type-narrowing.md)
+- [Generics and `Promise<T>` in TypeScript](./generics-and-promises.md)
