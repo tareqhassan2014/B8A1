@@ -52,6 +52,35 @@ function getPopularCourses(courses: Course[], minStudents: number): Course[] {
 }
 
 
+// Problem 7
+class Employee {
+  protected name: string;
+  private baseSalary: number;
+
+  constructor(name: string, baseSalary: number) {
+    this.name = name;
+    this.baseSalary = baseSalary;
+  }
+
+  getDetails(): string {
+    return `Employee: ${this.name}, Base Salary: ${this.baseSalary}`;
+  }
+}
+
+class Manager extends Employee {
+  private department: string;
+
+  constructor(name: string, baseSalary: number, department: string) {
+    super(name, baseSalary);
+    this.department = department;
+  }
+
+  getRoleInfo(): string {
+    return `Manager of ${this.department}: ${this.name}`;
+  }
+}
+
+
 // Problem 8
 async function validateAgeAsync(age: number): Promise<string> {
   if (age < 18) {
